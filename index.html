@@ -1,48 +1,102 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Period Tracker - 支持与隐私</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1 { color: #d63384; }
-        h2 { border-bottom: 2px solid #f8d7da; padding-bottom: 5px; margin-top: 30px; }
-        .contact-btn { display: inline-block; background: #d63384; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
-        .privacy-note { background: #fff3f8; border-left: 5px solid #d63384; padding: 15px; margin: 20px 0; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Period Tracker - 支持与隐私</title>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 24px;
+      color: #222;
+      background: #fff;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    .section {
+      margin-top: 16px;
+    }
+
+    .contact-link {
+      display: inline-block;
+      margin-top: 8px;
+      color: inherit;
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
+  <h1>Period Tracker</h1>
+  <p>一款用于记录经期与出血情况的本地经期追踪应用。</p>
 
-    <h1>Period Tracker</h1>
-    <p>您的私人经期管理与健康分析助手。</p>
+  <h2 id="privacy">隐私政策</h2>
 
-   <h2 id="privacy">隐私政策 (Privacy Policy)</h2>
-<div class="privacy-note">
-    <p><strong>1. 数据收集：</strong> 本应用（Period Tracker）完全尊重您的个人隐私。我们<strong>不收集、不上传、不共享</strong>您的任何健康数据、经期记录或个人身份信息。</p>
-    <p><strong>2. 存储方式：</strong> 所有数据均以加密或本地数据库形式存储在您的个人设备上。开发者无法通过任何远程手段访问您的数据。</p>
-    <p><strong>3. 第三方插件：</strong> 本应用未集成任何第三方广告或数据分析 SDK，确保您的行为路径不会被追踪。</p>
-    <p><strong>4. 数据控制权：</strong> 您拥有数据的绝对控制权。卸载应用将彻底删除存储在本地的所有记录，请务必提前进行系统备份。</p>
-</div>
+  <div class="section">
+    <p><strong>1. 数据收集：</strong>本应用尊重您的个人隐私。我们不收集、不上传、不共享您的健康数据、经期记录或个人身份信息。</p>
 
-    <h2>核心功能</h2>
-    <ul>
-        <li>精准记录经期、出血情况及宫颈粘液状态。</li>
-        <li>追踪压力、药物及生活习惯对周期的影响。</li>
-        <li>智能预测下次经期及排卵窗口。</li>
-        <li>支持数据导出，方便您在就医时向医生提供准确参考。</li>
-    </ul>
+    <p><strong>2. 数据存储：</strong>您的记录仅存储在您的个人设备上。开发者无法通过远程方式访问您的数据。</p>
 
-    <h2>常见问题 (FAQ)</h2>
-    <p><strong>Q: 我的数据会丢失吗？</strong><br>
-    A: 由于数据存储在本地，建议您定期进行系统备份。删除 App 将会导致本地数据清除。</p>
-    
-    <p><strong>Q: 预测结果准确吗？</strong><br>
-    A: App 基于您录入的历史数据进行模式识别和计算。录入的数据越准确，预测越贴近您的实际情况。</p>
+    <p><strong>3. 第三方服务：</strong>本应用未集成第三方广告 SDK 或数据分析 SDK，不会追踪您的使用行为。</p>
 
-    <h2>联系我们</h2>
-    <p>如果您在使用过程中遇到任何问题或有改进建议，请随时联系：</p>
-    <a href="mailto:your-email@example.com" class="contact-btn">发送邮件反馈</a>
+    <p><strong>4. 数据控制：</strong>您拥有对本地数据的控制权。卸载应用可能会删除存储在设备上的记录，建议您根据需要提前备份设备数据。</p>
+  </div>
 
+  <h2>核心功能</h2>
+
+  <ul>
+    <li>记录经期和非经期出血情况，帮助您区分不同类型的出血记录。</li>
+    <li>查看历史记录，了解自己的周期变化。</li>
+    <li>基于历史记录提供轻量的周期趋势参考。</li>
+  </ul>
+
+  <h2>常见问题</h2>
+
+  <div class="section">
+    <p><strong>Q：我的数据会上传到服务器吗？</strong><br />
+    A：不会。您的数据仅保存在本地设备中。</p>
+
+    <p><strong>Q：删除 App 后数据会丢失吗？</strong><br />
+    A：可能会。本应用的数据存储在本地，删除 App 可能导致记录被清除。</p>
+
+    <p><strong>Q：预测或趋势分析可以替代医学建议吗？</strong><br />
+    A：不可以。应用中的记录和趋势仅供个人参考，不能替代医生诊断或医学建议。</p>
+  </div>
+
+  <h2>联系我们</h2>
+
+  <p>如果您在使用过程中遇到问题，或有任何建议，欢迎通过邮件联系：</p>
+
+  <a href="mailto:gillxixixi@gmail.com" class="contact-link">
+    gillxixixi@gmail.com
+  </a>
 </body>
 </html>
